@@ -54,6 +54,7 @@ for filepath in filepaths:
     pdf.cell(w=30, h=8, txt="", border=1)
     pdf.cell(w=30, h=8, txt=str(total_price), border=1, ln=1)
 
+    # Sentence with total price and company logo after table
     pdf.set_font(family="Times", style="B", size=10)
     pdf.cell(w=0, h=8, txt=f"The total price is {total_price}", ln=1)
     pdf.set_font(family="Times", style="B", size=20)
